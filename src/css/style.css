@@ -1,66 +1,121 @@
-.conteiner {
-    margin-top: 200px;
-    margin-left: 100px;
-  }
-  
-  .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-    color: #fff;
-    background-color: #355fdc;
-    border-color: #355fdc;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    color: #fff;
-    background-color: #2c499d;
-    border-color: #2c499d;
-  }
-  
-  .btn:focus {
-    box-shadow: 0 0 0 0.2rem rgb(44 73 157 / 50%);
-  }
-  
-  .tooltip-wrapper {
-    position: relative;
-    z-index: 1060;
-    display: block;
-    max-width: 276px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: start;
-    text-decoration: none;
-    text-shadow: none;
-    text-transform: none;
-    letter-spacing: normal;
-    word-break: normal;
-    word-spacing: normal;
-    white-space: normal;
-    line-break: auto;
-    font-size: .875rem;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 0.3rem;
-  }
-  
-  .tooltip-title {
-    padding: 0.5rem 0.75rem;
+.table{
+    display: flex;
+}
+
+.column{
+    display: inline-block;
+    border: 1px solid;
+    width: 300px;
+    min-height: 500px;
     margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1rem;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #ebebeb;
-    border-top-left-radius: calc(0.3rem - 1px);
-    border-top-right-radius: calc(0.3rem - 1px);
-  }
-  
-  .tooltip-text {
-    padding: 0.5rem 0.75rem;
-    color: #212529;
-  }
+    margin-left: 15px;
+    background-color: #D3D3D3;
+    border-radius: 5px;
+    position:relative;
+    padding-bottom:50px;
+}
+
+.head{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 5%;
+    font-family: 'Arial', 'sans-serif';
+    font-weight: 700;
+}
+
+.footer{
+    padding-bottom: 5px;
+    padding-left: 5px;
+    position:absolute;
+    bottom:0;
+    cursor: pointer;
+}
+
+.card{
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: auto;
+    position:relative;
+    width: 90%;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 12px;
+    min-height: 50px;
+    max-height: 100px;
+    background-color: #fcfcfc;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.card:active{
+    cursor: grabbing;
+}
+
+.cross{
+    box-sizing: border-box;
+    position:absolute;
+    right:0;
+    top: 0;
+    cursor: pointer;
+    width: 18px;
+    background-color: rgb(216, 216, 226);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.add_card{
+    z-index: 999;
+    width: 90%;
+    display: inline-block;
+    position:absolute;
+    bottom:0;
+}
+
+.card_text{
+    border: none;
+    width: 100%;
+    min-height: 70px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.button_block{
+    display: flex;
+}
+
+.add_btn{
+    background-color: rgb(47, 212, 47);
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.add_btn:active{
+    border: 2px solid;
+}
+
+.add_cross{
+    padding-left: 10px;
+    padding-top: 1%;
+    cursor: pointer;
+}
+
+.fog{
+    display: none;
+}
+
+.dragged{
+    position: absolute;
+}
